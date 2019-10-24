@@ -27,6 +27,15 @@
           "revision": "b3e888b4972d9bc76495dd74d30a8c7fad4b9395",
           "version": "5.0.1"
         }
+      },
+      {
+        "package": "SPM_OCTest",
+        "repositoryURL": "https://github.com/yansaid/SPM_OCTest.git",
+        "state": {
+          "branch": null,
+          "revision": "139b8f16c88e27f23829ca12c8e7dda3e3081ece",
+          "version": "1.0.0"
+        }
       }
     ]
   },

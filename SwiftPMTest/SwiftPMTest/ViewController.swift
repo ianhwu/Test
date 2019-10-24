@@ -11,6 +11,7 @@ import HYImageBrowser
 import Kingfisher
 import RxSwift
 import RxCocoa
+import SPM_OCTest
 
 class ViewController: UIViewController {
 
@@ -30,6 +31,12 @@ class ViewController: UIViewController {
         image2.frame = .init(x: 100, y: 300, width: 100, height: 100)
         image2.kf.setImage(with: URL.init(string: "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1571798387&di=396f475753003a0c281249a7f83a1946&src=http://b-ssl.duitang.com/uploads/item/201603/07/20160307231006_PL4ia.jpeg")!)
         view.isAutoShowed = true
+        
+        let t = Test()
+        t.testRun()
+        
+        let t2 = Test2()
+        t2.testRun()
     }
 }
 
