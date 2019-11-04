@@ -1,0 +1,11 @@
+framework module SDKSwift {
+  umbrella header "SDKSwift.h"
+
+  export *
+  module * { export * }
+}
+
+module SDKSwift.Swift {
+    header "SDKSwift-Swift.h"
+    requires objc
+}

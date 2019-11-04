@@ -1,0 +1,6 @@
+framework module OCFWrapper {
+  umbrella header "OCFWrapper.h"
+
+  export *
+  module * { export * }
+}
