@@ -77,7 +77,7 @@ class BrandSelectViewController: BaseViewController {
         }
         
         let otherView = BrandSelectItem()
-        otherView.imageName = "brand-select-roche"
+        otherView.imageName = "brand-select-other"
         otherView.title = "Other Devices"
         view.addSubview(otherView)
         

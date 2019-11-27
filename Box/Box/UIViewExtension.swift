@@ -48,6 +48,11 @@ extension UIView {
             let label = UILabel()
             label.textColor = .white
             label.text = msg
+            label.isUserInteractionEnabled = true
+            label.addTapGesture { [weak view] (_) in
+                view?.removeFromSuperview()
+                selected?(msg)
+            }
             contentView.addSubview(label)
             label.snp.makeConstraints { (make) in
                 make.top.equalTo(top)
