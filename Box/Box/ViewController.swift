@@ -13,8 +13,18 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .red
+        view.backgroundColor = .orange
         title = "Title"
+        
+        let button = UIButton()
+        button.addTapGesture { (_) in
+            button.show(msgs: ["asdfasd", "asdfasdf", "adsfasdf"]) { (text) in
+                print(text)
+            }
+        }
+        button.frame = CGRect.init(x: 100, y: 50, width: 30, height: 80)
+        button.backgroundColor = .black
+        view.addSubview(button)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

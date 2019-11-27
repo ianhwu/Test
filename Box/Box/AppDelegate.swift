@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         let nav = DBNavigationViewController.init(rootViewController: ViewController())
         window?.rootViewController = nav
+        
         return true
     }
 }
-

@@ -9,30 +9,6 @@
 import UIKit
 import SnapKit
 
-/// status bar height
-var statusBarHeight: CGFloat {
-    return isNotchScreen ? 44 : 20
-}
-
-/// window safeAreaInsets
-var windowSafeAreaInsets: UIEdgeInsets {
-    if #available(iOS 11.0, *) {
-        return (UIApplication.shared.keyWindow?.safeAreaInsets)!
-    } else {
-        return .zero
-    }
-}
-
-/// 是不是刘海屏
-var isNotchScreen: Bool {
-    if #available(iOS 11.0, *) {
-        if windowSafeAreaInsets.top > 20 {
-            return true
-        }
-    }
-    return false
-}
-
 class DBNavigationViewController: UINavigationController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {

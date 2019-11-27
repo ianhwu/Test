@@ -12,7 +12,7 @@ class BaseViewController: UIViewController {
 
     lazy private var backButton: UIButton = {
         let btn = UIButton.init(type: .custom)
-        btn.setImage(UIImage.init(named: "baseline-keyboard_arrow_left-24px"), for: .normal)
+        btn.setImage(UIImage.init(named: "arrow-back"), for: .normal)
         btn.addTarget(self, action: #selector(back), for: .touchUpInside)
         return btn
     }()
@@ -24,17 +24,19 @@ class BaseViewController: UIViewController {
         return label
     }()
     
-    lazy private var navBar: UIView = {
+    lazy private(set) var navBar: UIView = {
         let view = UIView()
         view.addSubview(backButton)
         backButton.snp.makeConstraints { (make) in
             make.left.equalTo(6)
             make.width.height.equalTo(44)
-            make.top.equalTo(view)
+            make.bottom.equalTo(view)
         }
         view.addSubview(titleLable)
         titleLable.snp.makeConstraints { (make) in
-            make.center.equalTo(view)
+            make.centerX.equalTo(view)
+            make.height.equalTo(44)
+            make.bottom.equalTo(view)
         }
         return view
     }()
@@ -59,12 +61,12 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .purpleBlack
+        view.backgroundColor = .purple
         view.addSubview(navBar)
         navBar.snp.makeConstraints { (make) in
             make.left.right.equalTo(view)
-            make.height.equalTo(44)
-            make.top.equalTo(statusBarHeight)
+            make.height.equalTo(44 + statusBarHeight)
+            make.top.equalTo(view)
         }
     }
     
@@ -98,4 +100,5 @@ extension UIViewController {
                navigationController?.presentingViewController?.presentedViewController === navigationController ||
                tabBarController?.presentingViewController is UITabBarController
     }
+    
 }

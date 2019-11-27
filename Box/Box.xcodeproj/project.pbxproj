@@ -17,6 +17,16 @@
 		EE1DE23D238BB2DB004AB632 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1DE23C238BB2DB004AB632 /* Color.swift */; };
 		EE1DE23F238BB3FE004AB632 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1DE23E238BB3FE004AB632 /* BaseViewController.swift */; };
 		EE1DE241238BB9E0004AB632 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1DE240238BB9E0004AB632 /* SettingViewController.swift */; };
+		EEBB86B6238CCE2500BAA966 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86B5238CCE2500BAA966 /* UIViewExtension.swift */; };
+		EEBB86B9238CD82000BAA966 /* Closures in Frameworks */ = {isa = PBXBuildFile; productRef = EEBB86B8238CD82000BAA966 /* Closures */; };
+		EEBB86BB238E28EC00BAA966 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86BA238E28EC00BAA966 /* Font.swift */; };
+		EEBB86BE238E471E00BAA966 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EEBB86BD238E471E00BAA966 /* SwifterSwift */; };
+		EEBB86C0238E4B1D00BAA966 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86BF238E4B1D00BAA966 /* Config.swift */; };
+		EEBB86C2238E516900BAA966 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86C1238E516900BAA966 /* AboutViewController.swift */; };
+		EEBB86C4238E549800BAA966 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86C3238E549800BAA966 /* UILabelExtension.swift */; };
+		EEBB86C6238E725300BAA966 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86C5238E725300BAA966 /* UIApplicationExtension.swift */; };
+		EEBB86C8238E754100BAA966 /* BrandSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86C7238E754100BAA966 /* BrandSelectViewController.swift */; };
+		EEBB86CA238E75B100BAA966 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86C9238E75B100BAA966 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +41,14 @@
 		EE1DE23C238BB2DB004AB632 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EE1DE23E238BB3FE004AB632 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EE1DE240238BB9E0004AB632 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EEBB86B5238CCE2500BAA966 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		EEBB86BA238E28EC00BAA966 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		EEBB86BF238E4B1D00BAA966 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EEBB86C1238E516900BAA966 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		EEBB86C3238E549800BAA966 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		EEBB86C5238E725300BAA966 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		EEBB86C7238E754100BAA966 /* BrandSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandSelectViewController.swift; sourceTree = "<group>"; };
+		EEBB86C9238E75B100BAA966 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBB86BE238E471E00BAA966 /* SwifterSwift in Frameworks */,
+				EEBB86B9238CD82000BAA966 /* Closures in Frameworks */,
 				EE1DE23B238BB0CF004AB632 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,9 +93,17 @@
 			isa = PBXGroup;
 			children = (
 				EE1DE23C238BB2DB004AB632 /* Color.swift */,
+				EEBB86BA238E28EC00BAA966 /* Font.swift */,
+				EEBB86BF238E4B1D00BAA966 /* Config.swift */,
+				EEBB86C5238E725300BAA966 /* UIApplicationExtension.swift */,
+				EEBB86C3238E549800BAA966 /* UILabelExtension.swift */,
+				EEBB86B5238CCE2500BAA966 /* UIViewExtension.swift */,
+				EEBB86C9238E75B100BAA966 /* UIImageViewExtension.swift */,
 				EE1DE21F238B773B004AB632 /* AppDelegate.swift */,
 				EE1DE223238B773B004AB632 /* ViewController.swift */,
 				EE1DE240238BB9E0004AB632 /* SettingViewController.swift */,
+				EEBB86C1238E516900BAA966 /* AboutViewController.swift */,
+				EEBB86C7238E754100BAA966 /* BrandSelectViewController.swift */,
 				EE1DE23E238BB3FE004AB632 /* BaseViewController.swift */,
 				EE1DE233238B7D34004AB632 /* DBNavigationViewController.swift */,
 				EE1DE225238B773B004AB632 /* Main.storyboard */,
@@ -104,6 +132,8 @@
 			name = Box;
 			packageProductDependencies = (
 				EE1DE23A238BB0CF004AB632 /* SnapKit */,
+				EEBB86B8238CD82000BAA966 /* Closures */,
+				EEBB86BD238E471E00BAA966 /* SwifterSwift */,
 			);
 			productName = Box;
 			productReference = EE1DE21C238B773B004AB632 /* Box.app */;
@@ -135,6 +165,8 @@
 			mainGroup = EE1DE213238B773B004AB632;
 			packageReferences = (
 				EE1DE239238BB0CF004AB632 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EEBB86B7238CD82000BAA966 /* XCRemoteSwiftPackageReference "Closures" */,
+				EEBB86BC238E471E00BAA966 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
 			);
 			productRefGroup = EE1DE21D238B773B004AB632 /* Products */;
 			projectDirPath = "";
@@ -165,9 +197,17 @@
 			files = (
 				EE1DE23F238BB3FE004AB632 /* BaseViewController.swift in Sources */,
 				EE1DE224238B773B004AB632 /* ViewController.swift in Sources */,
+				EEBB86C0238E4B1D00BAA966 /* Config.swift in Sources */,
 				EE1DE23D238BB2DB004AB632 /* Color.swift in Sources */,
 				EE1DE220238B773B004AB632 /* AppDelegate.swift in Sources */,
+				EEBB86BB238E28EC00BAA966 /* Font.swift in Sources */,
+				EEBB86C8238E754100BAA966 /* BrandSelectViewController.swift in Sources */,
+				EEBB86C6238E725300BAA966 /* UIApplicationExtension.swift in Sources */,
+				EEBB86CA238E75B100BAA966 /* UIImageViewExtension.swift in Sources */,
+				EEBB86B6238CCE2500BAA966 /* UIViewExtension.swift in Sources */,
 				EE1DE235238B7D34004AB632 /* DBNavigationViewController.swift in Sources */,
+				EEBB86C2238E516900BAA966 /* AboutViewController.swift in Sources */,
+				EEBB86C4238E549800BAA966 /* UILabelExtension.swift in Sources */,
 				EE1DE241238BB9E0004AB632 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				INFOPLIST_FILE = Box/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				INFOPLIST_FILE = Box/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,6 +418,22 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		EEBB86B7238CD82000BAA966 /* XCRemoteSwiftPackageReference "Closures" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vhesener/Closures";
+			requirement = {
+				kind = revision;
+				revision = d42d1cea00b05fa6778e2a0e1601028b47a32f79;
+			};
+		};
+		EEBB86BC238E471E00BAA966 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -383,6 +441,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE1DE239238BB0CF004AB632 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		EEBB86B8238CD82000BAA966 /* Closures */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEBB86B7238CD82000BAA966 /* XCRemoteSwiftPackageReference "Closures" */;
+			productName = Closures;
+		};
+		EEBB86BD238E471E00BAA966 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEBB86BC238E471E00BAA966 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

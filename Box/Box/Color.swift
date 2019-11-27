@@ -38,12 +38,14 @@ import UIKit
 //}
 
 extension UIColor {
-    static let pinkRed = rgbColor(241, 73, 119)
-    static let blueBlack = rgbColor(19, 25, 51)
-    static let purpleBlack = rgbColor(35, 40, 75)
-    static let purpleLine = rgbColor(43, 50, 100)
-    
     static func rgbColor(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ alpha: CGFloat = 1) -> UIColor {
         return UIColor.init(red: r / 255, green: g / 255, blue: b / 255, alpha: alpha)
     }
+    
+    static let pinkRed = rgbColor(241, 73, 119)
+    static let modena = rgbColor(19, 25, 51)
+    static let purple = rgbColor(35, 40, 75)
+    static let purpleLine = rgbColor(43, 50, 100)
+    
+    static let white10 = rgbColor(255, 255, 255, 0.1)
 }
