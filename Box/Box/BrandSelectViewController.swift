@@ -115,7 +115,7 @@ class BrandSelectItem: UIView {
     }
     
     lazy private var titleLabel: UILabel = {
-        let label = UILabel.white12()
+        let label = UILabel.title()
         label.textAlignment = .center
         return label
     }()
@@ -129,7 +129,7 @@ class BrandSelectItem: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .purple
-        cornerRadius = cornerRadiusSmall
+        cornerRadius = Config.cornerRadiusSmall
         addSubview(imageView)
         addSubview(titleLabel)
         

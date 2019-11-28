@@ -18,8 +18,8 @@ class ViewController: BaseViewController {
         
         let button = UIButton()
         button.addTapGesture { (_) in
-            button.show(msgs: ["asdfasd", "asdfasdf", "adsfasdf"]) { (text) in
-                print(text)
+            self.picker(["1.1", "1.2"]) { _ in
+                
             }
         }
         button.frame = CGRect.init(x: 100, y: 50, width: 30, height: 80)

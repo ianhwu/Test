@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Closures
 
 extension UIImageView {
     static func view(with name: String) -> UIImageView {
@@ -20,5 +21,14 @@ extension UIImageView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         return imageView
+    }
+    
+    @discardableResult
+    func tap(_ action: (() -> ())?) -> Self {
+        isUserInteractionEnabled = true
+        addTapGesture { _ in
+            action?()
+        }
+        return self
     }
 }

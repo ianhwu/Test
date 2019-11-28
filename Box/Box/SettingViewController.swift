@@ -59,9 +59,12 @@ class SettingViewController: BaseViewController {
         let cell1 = SettingCell()
         cell1.icon = UIImage.init(named: "outline-reorder")
         cell1.title = "Settings"
+        cell1.topLineIsHidden = true
         contentView.addSubview(cell1)
         cell1.didSelect = {
             [weak self] in
+            let vc = SettingsViewController1()
+            self?.navigationController?.pushViewController(vc, animated: true)
         }
         
         cell1.snp.makeConstraints { (make) in
@@ -70,7 +73,7 @@ class SettingViewController: BaseViewController {
         }
         
         let cell2 = SettingCell()
-        cell2.icon = UIImage.init(named: "outline-reorder")
+        cell2.icon = UIImage.init(named: "phone")
         cell2.title = "i-CGM"
         contentView.addSubview(cell2)
         cell2.didSelect = {
@@ -90,6 +93,8 @@ class SettingViewController: BaseViewController {
         contentView.addSubview(cell3)
         cell3.didSelect = {
             [weak self] in
+            let vc = IntegrationViewController()
+            self?.navigationController?.pushViewController(vc, animated: true)
         }
         
         cell3.snp.makeConstraints { (make) in
@@ -195,6 +200,12 @@ class SettingCell: UIView {
         addSubview(titleLabel)
         addSubview(topLineView)
         addSubview(arrowView)
+        
+        let margin = Config.margin
+        let lineHeight = Config.lineHeight
+        let itemHeight = Config.itemHeight
+        let gap = Config.gap
+        let iconLength = Config.iconLength
         
         topLineView.snp.makeConstraints { (make) in
             make.top.equalTo(self)

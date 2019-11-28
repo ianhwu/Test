@@ -48,4 +48,6 @@ extension UIColor {
     static let purpleLine = rgbColor(43, 50, 100)
     
     static let white10 = rgbColor(255, 255, 255, 0.1)
+    
+    static let black50 = rgbColor(0, 0, 0, 0.5)
 }

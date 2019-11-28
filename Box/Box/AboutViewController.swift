@@ -15,6 +15,8 @@ class AboutViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         title = "About"
+        
+        
         let appIconView = UIImageView()
         appIconView.contentMode = .scaleAspectFit
         appIconView.image = UIImage.init(named: "app-icon")
@@ -36,7 +38,7 @@ class AboutViewController: BaseViewController {
             make.top.equalTo(appIconView.snp.bottom).offset(24)
         }
         
-        let versionNameLabel = UILabel.white12()
+        let versionNameLabel = UILabel.title()
         versionNameLabel.text = "Version"
         view.addSubview(versionNameLabel)
         
@@ -45,7 +47,7 @@ class AboutViewController: BaseViewController {
             make.top.equalTo(nameLabel.snp.bottom).offset(30)
         }
         
-        let versionValueLabel = UILabel.white12()
+        let versionValueLabel = UILabel.title()
         versionValueLabel.text = UIApplication.buildVersion
         view.addSubview(versionValueLabel)
         
