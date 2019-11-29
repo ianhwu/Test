@@ -25,6 +25,11 @@ class BrandSelectViewController: BaseViewController {
         abbottView.imageName = "brand-select-abbott"
         abbottView.title = "Abbott"
         view.addSubview(abbottView)
+        abbottView.action = {
+            [weak self] in
+            let vc = ScanViewController()
+            self?.navigationController?.pushViewController(vc)
+        }
         
         abbottView.snp.makeConstraints { (make) in
             make.left.equalTo(margin)
@@ -126,8 +131,16 @@ class BrandSelectItem: UIView {
         }
     }
     
+    var action: (() -> ())?
+    func tap(_ action: (() -> ())?) {
+        self.action = action
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addTapGesture { [weak self] _ in
+            self?.action?()
+        }
+        
         backgroundColor = .purple
         cornerRadius = Config.cornerRadiusSmall
         addSubview(imageView)

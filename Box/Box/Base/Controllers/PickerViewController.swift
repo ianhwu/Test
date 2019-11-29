@@ -52,6 +52,7 @@ class PickerViewController: UIViewController {
         guard !items.isEmpty else { return }
         didSelected?(items[index])
     }
+    var current: String?
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -119,6 +120,15 @@ class PickerViewController: UIViewController {
             contentView.topConstraint = make.top.equalTo(view.snp.bottom).constraint
         }
         view.backgroundColor = .clear
+        
+        if let current = current {
+            for i in 0 ..< items.count {
+                if items[i] == current {
+                    pickerView.selectRow(i, inComponent: 0, animated: false)
+                    break
+                }
+            }
+        }
     }
     
     private func hide() {
@@ -132,6 +142,12 @@ class PickerViewController: UIViewController {
         }) { _ in
             self.dismiss(animated: false, completion: nil)
         }
+    }
+    
+    @discardableResult
+    func title(_ text: String?) -> Self {
+        titleLabel.text = text
+        return self
     }
     
     required init?(coder: NSCoder) {
@@ -162,8 +178,10 @@ extension PickerViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 }
 
 extension UIViewController {
-    func picker(_ items: [String], _ didSelected: ((String) -> ())?) {
-        let vc = PickerViewController(items)
+    func picker(_ items: [String], _ title: String?,_ current: String? = nil, _ didSelected: ((String) -> ())?) {
+        let vc = PickerViewController(items).title(title)
+        vc.current = current
+        vc.didSelected = didSelected
         vc.modalPresentationStyle = .overCurrentContext
         present(vc, animated: false, completion: nil)
     }

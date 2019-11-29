@@ -18,9 +18,8 @@ class ViewController: BaseViewController {
         
         let button = UIButton()
         button.addTapGesture { (_) in
-            self.picker(["1.1", "1.2"]) { _ in
-                
-            }
+            let vc = ScanViewController()
+            self.navigationController?.pushViewController(vc)
         }
         button.frame = CGRect.init(x: 100, y: 50, width: 30, height: 80)
         button.backgroundColor = .black

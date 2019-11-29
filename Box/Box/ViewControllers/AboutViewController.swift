@@ -16,7 +16,6 @@ class AboutViewController: BaseViewController {
         // Do any additional setup after loading the view.
         title = "About"
         
-        
         let appIconView = UIImageView()
         appIconView.contentMode = .scaleAspectFit
         appIconView.image = UIImage.init(named: "app-icon")

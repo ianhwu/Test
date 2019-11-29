@@ -108,6 +108,8 @@ class BaseViewController: UIViewController {
 class BaseScrollViewController: BaseViewController {
     lazy private(set) var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
         scrollView.addSubview(contentView)
         contentView.snp.makeConstraints { (make) in
             make.edges.width.equalTo(scrollView)

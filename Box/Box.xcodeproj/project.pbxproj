@@ -12,7 +12,7 @@
 		EE1DE227238B773B004AB632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1DE225238B773B004AB632 /* Main.storyboard */; };
 		EE1DE229238B773D004AB632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1DE228238B773D004AB632 /* Assets.xcassets */; };
 		EE1DE22C238B773D004AB632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1DE22A238B773D004AB632 /* LaunchScreen.storyboard */; };
-		EE1DE235238B7D34004AB632 /* DBNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1DE233238B7D34004AB632 /* DBNavigationViewController.swift */; };
+		EE1DE235238B7D34004AB632 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1DE233238B7D34004AB632 /* BaseNavigationViewController.swift */; };
 		EE1DE23B238BB0CF004AB632 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE1DE23A238BB0CF004AB632 /* SnapKit */; };
 		EE1DE23D238BB2DB004AB632 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1DE23C238BB2DB004AB632 /* Color.swift */; };
 		EE1DE23F238BB3FE004AB632 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1DE23E238BB3FE004AB632 /* BaseViewController.swift */; };
@@ -33,6 +33,9 @@
 		EEBB86D2238F689C00BAA966 /* BaseItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBB86D1238F689C00BAA966 /* BaseItemsCell.swift */; };
 		EEF06353238FD12E003D7199 /* BaseSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF06352238FD12E003D7199 /* BaseSelectView.swift */; };
 		EEF06355238FD2BF003D7199 /* BaseSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF06354238FD2BF003D7199 /* BaseSelectCell.swift */; };
+		EEF063572390AEA2003D7199 /* BasePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF063562390AEA2003D7199 /* BasePickerCell.swift */; };
+		EEF063662390E572003D7199 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF063652390E572003D7199 /* ScanViewController.swift */; };
+		EEF063682390F338003D7199 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF063672390F338003D7199 /* UIButtonExtension.swift */; };
 		EEF6EC1D238F784300E17EBE /* BaseTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6EC1C238F784300E17EBE /* BaseTextFieldCell.swift */; };
 		EEF6EC1F238F9F3500E17EBE /* BaseCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6EC1E238F9F3500E17EBE /* BaseCheckBox.swift */; };
 		EEF6EC21238FA84000E17EBE /* BaseTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF6EC20238FA84000E17EBE /* BaseTitleCell.swift */; };
@@ -49,7 +52,7 @@
 		EE1DE228238B773D004AB632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1DE22B238B773D004AB632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1DE22D238B773D004AB632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE1DE233238B7D34004AB632 /* DBNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBNavigationViewController.swift; sourceTree = "<group>"; };
+		EE1DE233238B7D34004AB632 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		EE1DE23C238BB2DB004AB632 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EE1DE23E238BB3FE004AB632 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EE1DE240238BB9E0004AB632 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +70,13 @@
 		EEBB86D1238F689C00BAA966 /* BaseItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItemsCell.swift; sourceTree = "<group>"; };
 		EEF06352238FD12E003D7199 /* BaseSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSelectView.swift; sourceTree = "<group>"; };
 		EEF06354238FD2BF003D7199 /* BaseSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSelectCell.swift; sourceTree = "<group>"; };
+		EEF063562390AEA2003D7199 /* BasePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePickerCell.swift; sourceTree = "<group>"; };
+		EEF063612390C456003D7199 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		EEF063622390C456003D7199 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EEF063632390C45C003D7199 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		EEF063642390C45C003D7199 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EEF063652390E572003D7199 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		EEF063672390F338003D7199 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		EEF6EC1C238F784300E17EBE /* BaseTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldCell.swift; sourceTree = "<group>"; };
 		EEF6EC1E238F9F3500E17EBE /* BaseCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCheckBox.swift; sourceTree = "<group>"; };
 		EEF6EC20238FA84000E17EBE /* BaseTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTitleCell.swift; sourceTree = "<group>"; };
@@ -116,38 +126,105 @@
 		EE1DE21E238B773B004AB632 /* Box */ = {
 			isa = PBXGroup;
 			children = (
-				EE1DE21F238B773B004AB632 /* AppDelegate.swift */,
-				EE1DE223238B773B004AB632 /* ViewController.swift */,
-				EE1DE23C238BB2DB004AB632 /* Color.swift */,
-				EEBB86BA238E28EC00BAA966 /* Font.swift */,
-				EEBB86BF238E4B1D00BAA966 /* Config.swift */,
-				EEBB86C5238E725300BAA966 /* UIApplicationExtension.swift */,
-				EEBB86C3238E549800BAA966 /* UILabelExtension.swift */,
-				EEBB86B5238CCE2500BAA966 /* UIViewExtension.swift */,
-				EEBB86CF238F67BA00BAA966 /* StringExtension.swift */,
-				EEBB86C9238E75B100BAA966 /* UIImageViewExtension.swift */,
-				EE1DE240238BB9E0004AB632 /* SettingViewController.swift */,
-				EEF6EC24238FB75A00E17EBE /* SettingsViewController1.swift */,
-				EEBB86C1238E516900BAA966 /* AboutViewController.swift */,
-				EEBB86C7238E754100BAA966 /* BrandSelectViewController.swift */,
-				EEBB86CB238F5A2C00BAA966 /* IntegrationViewController.swift */,
-				EE1DE23E238BB3FE004AB632 /* BaseViewController.swift */,
+				EEF0635E2390B438003D7199 /* App */,
+				EEF0635D2390B428003D7199 /* Extensions */,
+				EEF0635C2390B411003D7199 /* Config */,
+				EEF063602390B4D6003D7199 /* ViewControllers */,
+				EEF063582390B34D003D7199 /* Base */,
+			);
+			path = Box;
+			sourceTree = "<group>";
+		};
+		EEF063582390B34D003D7199 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0635B2390B3F2003D7199 /* Controllers */,
+				EEF0635A2390B3AB003D7199 /* Views */,
+				EEF063592390B3A3003D7199 /* Cells */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EEF063592390B3A3003D7199 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				EEBB86CD238F64A600BAA966 /* BaseCell.swift */,
 				EEBB86D1238F689C00BAA966 /* BaseItemsCell.swift */,
 				EEF6EC1C238F784300E17EBE /* BaseTextFieldCell.swift */,
 				EEF6EC20238FA84000E17EBE /* BaseTitleCell.swift */,
 				EEF6EC22238FAC5500E17EBE /* BaseSwitchCell.swift */,
+				EEF06354238FD2BF003D7199 /* BaseSelectCell.swift */,
+				EEF063562390AEA2003D7199 /* BasePickerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EEF0635A2390B3AB003D7199 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				EEF6EC1E238F9F3500E17EBE /* BaseCheckBox.swift */,
 				EEF06352238FD12E003D7199 /* BaseSelectView.swift */,
-				EEF06354238FD2BF003D7199 /* BaseSelectCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEF0635B2390B3F2003D7199 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				EEF6EC26238FB7E100E17EBE /* PickerViewController.swift */,
-				EE1DE233238B7D34004AB632 /* DBNavigationViewController.swift */,
+				EE1DE233238B7D34004AB632 /* BaseNavigationViewController.swift */,
+				EE1DE23E238BB3FE004AB632 /* BaseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EEF0635C2390B411003D7199 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EE1DE23C238BB2DB004AB632 /* Color.swift */,
+				EEBB86BA238E28EC00BAA966 /* Font.swift */,
+				EEBB86BF238E4B1D00BAA966 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EEF0635D2390B428003D7199 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEBB86C5238E725300BAA966 /* UIApplicationExtension.swift */,
+				EEBB86C3238E549800BAA966 /* UILabelExtension.swift */,
+				EEBB86B5238CCE2500BAA966 /* UIViewExtension.swift */,
+				EEBB86CF238F67BA00BAA966 /* StringExtension.swift */,
+				EEBB86C9238E75B100BAA966 /* UIImageViewExtension.swift */,
+				EEF063672390F338003D7199 /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEF0635E2390B438003D7199 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EE1DE21F238B773B004AB632 /* AppDelegate.swift */,
 				EE1DE225238B773B004AB632 /* Main.storyboard */,
 				EE1DE228238B773D004AB632 /* Assets.xcassets */,
 				EE1DE22A238B773D004AB632 /* LaunchScreen.storyboard */,
 				EE1DE22D238B773D004AB632 /* Info.plist */,
 			);
-			path = Box;
+			path = App;
+			sourceTree = "<group>";
+		};
+		EEF063602390B4D6003D7199 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE1DE223238B773B004AB632 /* ViewController.swift */,
+				EE1DE240238BB9E0004AB632 /* SettingViewController.swift */,
+				EEF6EC24238FB75A00E17EBE /* SettingsViewController1.swift */,
+				EEBB86C1238E516900BAA966 /* AboutViewController.swift */,
+				EEBB86C7238E754100BAA966 /* BrandSelectViewController.swift */,
+				EEBB86CB238F5A2C00BAA966 /* IntegrationViewController.swift */,
+				EEF063652390E572003D7199 /* ScanViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +274,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = EE1DE213238B773B004AB632;
 			packageReferences = (
@@ -242,13 +321,16 @@
 				EEBB86BB238E28EC00BAA966 /* Font.swift in Sources */,
 				EEBB86C8238E754100BAA966 /* BrandSelectViewController.swift in Sources */,
 				EEBB86D0238F67BA00BAA966 /* StringExtension.swift in Sources */,
+				EEF063572390AEA2003D7199 /* BasePickerCell.swift in Sources */,
 				EEBB86C6238E725300BAA966 /* UIApplicationExtension.swift in Sources */,
+				EEF063682390F338003D7199 /* UIButtonExtension.swift in Sources */,
 				EEBB86CA238E75B100BAA966 /* UIImageViewExtension.swift in Sources */,
 				EEF6EC23238FAC5500E17EBE /* BaseSwitchCell.swift in Sources */,
+				EEF063662390E572003D7199 /* ScanViewController.swift in Sources */,
 				EEBB86B6238CCE2500BAA966 /* UIViewExtension.swift in Sources */,
 				EEBB86CC238F5A2C00BAA966 /* IntegrationViewController.swift in Sources */,
 				EEF6EC1D238F784300E17EBE /* BaseTextFieldCell.swift in Sources */,
-				EE1DE235238B7D34004AB632 /* DBNavigationViewController.swift in Sources */,
+				EE1DE235238B7D34004AB632 /* BaseNavigationViewController.swift in Sources */,
 				EEBB86C2238E516900BAA966 /* AboutViewController.swift in Sources */,
 				EEBB86C4238E549800BAA966 /* UILabelExtension.swift in Sources */,
 				EEF06355238FD2BF003D7199 /* BaseSelectCell.swift in Sources */,
@@ -267,6 +349,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				EE1DE226238B773B004AB632 /* Base */,
+				EEF063612390C456003D7199 /* zh-Hans */,
+				EEF063632390C45C003D7199 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -275,6 +359,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				EE1DE22B238B773D004AB632 /* Base */,
+				EEF063622390C456003D7199 /* zh-Hans */,
+				EEF063642390C45C003D7199 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -286,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -346,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -403,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = W4JY5996A9;
-				INFOPLIST_FILE = Box/Info.plist;
+				INFOPLIST_FILE = Box/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -423,7 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = W4JY5996A9;
-				INFOPLIST_FILE = Box/Info.plist;
+				INFOPLIST_FILE = Box/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

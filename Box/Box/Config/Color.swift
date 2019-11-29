@@ -46,8 +46,10 @@ extension UIColor {
     static let modena = rgbColor(19, 25, 51)
     static let purple = rgbColor(35, 40, 75)
     static let purpleLine = rgbColor(43, 50, 100)
+    static let blue = rgbColor(108, 200, 255)
     
     static let white10 = rgbColor(255, 255, 255, 0.1)
+    static let white50 = rgbColor(255, 255, 255, 0.5)
     
     static let black50 = rgbColor(0, 0, 0, 0.5)
 }

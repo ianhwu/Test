@@ -1,5 +1,5 @@
 //
-//  DBNavigationViewController.swift
+//  BaseNavigationViewController.swift
 //  Box
 //
 //  Created by Yan Hu on 2019/11/25.
@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class DBNavigationViewController: UINavigationController, UIGestureRecognizerDelegate {
+class BaseNavigationViewController: UINavigationController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
