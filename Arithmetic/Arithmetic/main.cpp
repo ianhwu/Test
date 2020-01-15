@@ -75,26 +75,26 @@ Note that "test.imp" is really a header file, so it gets into your code through 
 int main(int argc, const char * argv[]) {
     // insert code here...
 
-    SplayTree<int> tree = SplayTree<int>(200);
-    tree._insert(190);
-    tree._insert(180);
-    tree._insert(170);
-    tree._insert(160);
-    tree._insert(150);
-    tree._insert(140);
-    tree._insert(130);
-    tree._insert(120);
-    tree._insert(110);
-    tree._insert(100);
-    tree._search(100);
-    tree.printTree();
-    
-    
-    tree._search(200);
-    tree.printTree();
-    
-    tree._delete(170);
-    tree.printTree();
+//    SplayTree<int> tree = SplayTree<int>(200);
+//    tree._insert(190);
+//    tree._insert(180);
+//    tree._insert(170);
+//    tree._insert(160);
+//    tree._insert(150);
+//    tree._insert(140);
+//    tree._insert(130);
+//    tree._insert(120);
+//    tree._insert(110);
+//    tree._insert(100);
+//    tree._search(100);
+//    tree.printTree();
+//
+//
+//    tree._search(200);
+//    tree.printTree();
+//
+//    tree._delete(170);
+//    tree.printTree();
     
 //    tree._search(180);
 //    tree.printTree();
@@ -105,5 +105,14 @@ int main(int argc, const char * argv[]) {
 //    tree._search(180);
 //    tree.printTree();
     
+    vector<int> a = {4, 9, 10, 30, 6, 20, 1, 25, 15};
+    Heap<int> h = Heap<int>();
+    h._heap(a);
+    h.print();
+    
+    vector<int> temp = h.sort();
+    for (int i = 0; i < temp.size(); i++) {
+        cout << temp[i] << endl;
+    }
     return 0;
 }

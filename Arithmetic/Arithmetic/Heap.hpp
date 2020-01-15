@@ -23,6 +23,8 @@ public:
     void deleteMax();
     void _heap(vector<T> array);
     
+    void print();
+    
     vector<T> sort();
 };
 

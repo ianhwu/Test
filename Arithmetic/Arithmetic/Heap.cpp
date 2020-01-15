@@ -18,6 +18,15 @@ void Heap<T>::_heap(vector<T> array) {
 }
 
 template <class T>
+void Heap<T>::print() {
+    for (int i = 0; i < heap.size(); i++) {
+        cout << heap[i] << endl;
+    }
+    
+    cout << "end" << endl;
+}
+
+template <class T>
 void Heap<T>::_insert(T value) {
     heap.push_back(value);
     filterUp();

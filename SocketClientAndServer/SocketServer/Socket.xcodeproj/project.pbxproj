@@ -14,7 +14,12 @@
 		EE60C15E2317CA3F005B71D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE60C15D2317CA3F005B71D7 /* Assets.xcassets */; };
 		EE60C1612317CA3F005B71D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE60C15F2317CA3F005B71D7 /* LaunchScreen.storyboard */; };
 		EE60C1692317DF0C005B71D7 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE60C1682317DF0C005B71D7 /* ExternalAccessory.framework */; };
-		EE7B5986231D1C94002A0C0E /* yanhu.cer in Resources */ = {isa = PBXBuildFile; fileRef = EE7B5985231D1C94002A0C0E /* yanhu.cer */; };
+		EE64C8C223C5790B00E4612E /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE64C8C123C5790B00E4612E /* face.jpg */; };
+		EECE47B623B60C2200F505DB /* localhost.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EECE47B223B60C2100F505DB /* localhost.p12 */; };
+		EECE47B823B60C2200F505DB /* ca.der in Resources */ = {isa = PBXBuildFile; fileRef = EECE47B423B60C2200F505DB /* ca.der */; };
+		EECE47C023B6143B00F505DB /* server.der in Resources */ = {isa = PBXBuildFile; fileRef = EECE47BF23B6142A00F505DB /* server.der */; };
+		EECE47C123B6143B00F505DB /* server.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EECE47BE23B6142A00F505DB /* server.p12 */; };
+		EEF66DB123BAF862009434DA /* yansaid.github.io in Resources */ = {isa = PBXBuildFile; fileRef = EEF66DB023BAF862009434DA /* yansaid.github.io */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +35,12 @@
 		EE60C1622317CA3F005B71D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE60C1682317DF0C005B71D7 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		EE60C16A2317DF0C005B71D7 /* Socket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Socket.entitlements; sourceTree = "<group>"; };
-		EE7B5985231D1C94002A0C0E /* yanhu.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = yanhu.cer; sourceTree = "<group>"; };
+		EE64C8C123C5790B00E4612E /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpg; sourceTree = "<group>"; };
+		EECE47B223B60C2100F505DB /* localhost.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = localhost.p12; sourceTree = "<group>"; };
+		EECE47B423B60C2200F505DB /* ca.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = ca.der; sourceTree = "<group>"; };
+		EECE47BE23B6142A00F505DB /* server.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.p12; sourceTree = "<group>"; };
+		EECE47BF23B6142A00F505DB /* server.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.der; sourceTree = "<group>"; };
+		EEF66DB023BAF862009434DA /* yansaid.github.io */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yansaid.github.io; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,13 +96,18 @@
 			isa = PBXGroup;
 			children = (
 				EE60C16A2317DF0C005B71D7 /* Socket.entitlements */,
+				EECE47BF23B6142A00F505DB /* server.der */,
+				EECE47BE23B6142A00F505DB /* server.p12 */,
+				EECE47B423B60C2200F505DB /* ca.der */,
+				EECE47B223B60C2100F505DB /* localhost.p12 */,
+				EE64C8C123C5790B00E4612E /* face.jpg */,
 				EE60C1562317CA3D005B71D7 /* AppDelegate.swift */,
 				EE60C1582317CA3D005B71D7 /* ViewController.swift */,
-				EE7B5985231D1C94002A0C0E /* yanhu.cer */,
 				EE60C15A2317CA3D005B71D7 /* Main.storyboard */,
 				EE60C15D2317CA3F005B71D7 /* Assets.xcassets */,
 				EE60C15F2317CA3F005B71D7 /* LaunchScreen.storyboard */,
 				EE60C1622317CA3F005B71D7 /* Info.plist */,
+				EEF66DB023BAF862009434DA /* yansaid.github.io */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
@@ -165,9 +180,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECE47C023B6143B00F505DB /* server.der in Resources */,
+				EEF66DB123BAF862009434DA /* yansaid.github.io in Resources */,
+				EECE47C123B6143B00F505DB /* server.p12 in Resources */,
+				EECE47B623B60C2200F505DB /* localhost.p12 in Resources */,
+				EE64C8C223C5790B00E4612E /* face.jpg in Resources */,
+				EECE47B823B60C2200F505DB /* ca.der in Resources */,
 				EE60C1612317CA3F005B71D7 /* LaunchScreen.storyboard in Resources */,
 				EE60C15E2317CA3F005B71D7 /* Assets.xcassets in Resources */,
-				EE7B5986231D1C94002A0C0E /* yanhu.cer in Resources */,
 				EE60C15C2317CA3D005B71D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

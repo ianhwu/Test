@@ -7,29 +7,41 @@
 //
 
 import UIKit
-
+import Telegraph
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
+    
     var window: UIWindow?
-
+    var server = Server()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        DispatchQueue.global().async {
-//            sleep(2)
-//            let task = URLSession.shared.dataTask(with: URL.init(string: "http://localhost:9908")!, completionHandler: { (data, _, _) in
-//                if let data = data {
-//                    let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
-////                    let json = String.init(data: data, encoding: .utf8)
-//                    print(json)
-//                }
-//            })
-//            task.resume()
-//        }
+//        let caCertificateURL = Bundle.main.url(forResource: "server", withExtension: "der")!
+//        let caCertificate = Certificate(derURL: caCertificateURL)!
+//
+//        let identityURL = Bundle.main.url(forResource: "server", withExtension: "p12")!
+//        let identity = CertificateIdentity(p12URL: identityURL, passphrase: "diabox")!
+//
+//        server = Server(identity: identity, caCertificates: [caCertificate])
+        server = Server()
+        try? server.start(port: 1234, interface: "localhost")
+//        let demoBundleURL = Bundle.main.url(forResource: "yansaid.github.io", withExtension: nil)!
+//        server.serveDirectory(demoBundleURL)
         
+        server.route(.GET, "*") { () -> HTTPResponse in
+            return HTTPResponse(content: "Hello World")
+        }
         return true
     }
+    
+    func handleGreeting(request: HTTPRequest) -> HTTPResponse {
+      let name = request.params["name"] ?? "stranger"
+      return HTTPResponse(content: "Hello \(name.capitalized)")
+    }
+    
     
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
@@ -42,6 +54,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             RunLoop.current.add(timer, forMode: .common)
         }
+        
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

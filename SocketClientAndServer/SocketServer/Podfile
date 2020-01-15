@@ -4,4 +4,5 @@ use_frameworks!
 
 target :Socket do
     pod 'CocoaAsyncSocket'
+    pod 'Telegraph'
 end
