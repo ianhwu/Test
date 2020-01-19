@@ -1,13 +1,4 @@
-//
-//  main.swift
-//  Lock
-//
-//  Created by Yan Hu on 2020/1/17.
-//  Copyright © 2020 cn.com.yan. All rights reserved.
-//
-
-import Foundation
-
+```
 // 自旋锁会持续使用 cpu，知道获取了资源并且执行完
 // 互斥锁会会切换上下文，变成不活跃状态，当获取资源后才重新占用 cpu
 
@@ -38,3 +29,5 @@ dispatch_queue_barrier_test()
 // 总结
 // 针对 GCD 并发队列的同步处理，可以使用 sync 和 barrier
 // 针对 线程 处理可以跟进需求使用不同的锁来处理
+
+```
