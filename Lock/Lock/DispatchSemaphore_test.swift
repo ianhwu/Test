@@ -13,7 +13,7 @@ func test_semaphore() {
     var number = 0
     DispatchQueue.global().async {
         semaphore.wait()
-        while number < 100 {
+        while number < 20 {
             number += 1
             print("semaphore in \(number)")
         }
@@ -22,7 +22,7 @@ func test_semaphore() {
 
     DispatchQueue.global().async {
         semaphore.wait()
-        while number < 100 {
+        while number < 20 {
             number += 1
             print("semaphore outside \(number)")
         }
@@ -30,5 +30,5 @@ func test_semaphore() {
     }
 
     sleep(1)
-    print("test_semaphore end")
+    print("test_semaphore end \n\n\n")
 }

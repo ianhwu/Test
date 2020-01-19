@@ -14,10 +14,16 @@ import Foundation
 // 自旋锁
 test_os_unfair_lock()
 
-// 互斥锁
+// 互斥锁 mutex
 // The NSLock class uses POSIX threads to implement its locking behavior.
-// NSLock, NSRecursiveLock, NSConditionLock 都是使用 pthread_mutex_t 实现的
+// NSLock, NSRecursiveLock, NSCondition, NSConditionLock 都是使用 pthread_mutex_t 实现的
 test_pthread_mutex()
+
+// 条件
+test_pthread_cond()
+
+// 递归锁
+test_pthread_mutex_recursive()
 
 // 使用信号量实现互斥 DispatchSemaphore, 当资源设置为 1 的时候，相当于互斥锁，
 // 当信号量为 0 的时候, 会 sleep，知道资源为 1
@@ -38,3 +44,4 @@ dispatch_queue_barrier_test()
 // 总结
 // 针对 GCD 并发队列的同步处理，可以使用 sync 和 barrier
 // 针对 线程 处理可以跟进需求使用不同的锁来处理
+

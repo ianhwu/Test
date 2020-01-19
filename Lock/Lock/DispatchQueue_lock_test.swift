@@ -17,7 +17,7 @@ func dispatch_queue_sync_test() {
     DispatchQueue.global().async {
         DispatchQueue.global().async {
             queue.sync {
-                while number < 100 {
+                while number < 20 {
                     number += 1
                     print("dispatch_queue_sync in \(number)")
                 }
@@ -26,7 +26,7 @@ func dispatch_queue_sync_test() {
         
         DispatchQueue.global().async {
             queue.sync {
-                while number < 100 {
+                while number < 20 {
                     number += 1
                     print("dispatch_queue_sync outside \(number)")
                 }
@@ -35,7 +35,7 @@ func dispatch_queue_sync_test() {
     }
     
     sleep(1)
-    print("dispatch_queue_sync_test end")
+    print("dispatch_queue_sync_test end \n\n\n")
 }
 
 // barrier
@@ -46,13 +46,13 @@ func dispatch_queue_barrier_test() {
     DispatchQueue.global().async {
         queue.async(flags: .barrier) {
             print("11 some test")
-            while number < 100 {
+            while number < 20 {
                 number += 1
                 print("dispatch_queue_barrier in \(number)")
             }
         }
         
-        for i in 0 ..< 100 {
+        for i in 0 ..< 20 {
             queue.async {
                 print("\(i) some test")
                 sleep(1)
@@ -61,7 +61,7 @@ func dispatch_queue_barrier_test() {
         
         queue.sync(flags: .barrier) {
             print("outside some test")
-            while number < 100 {
+            while number < 20 {
                 number += 1
                 print("dispatch_queue_barrier outside \(number)")
             }
@@ -75,5 +75,5 @@ func dispatch_queue_barrier_test() {
     }
     
     sleep(4)
-    print("dispatch_queue_barrier_test end")
+    print("dispatch_queue_barrier_test end \n\n\n")
 }

@@ -14,7 +14,7 @@ func test_os_unfair_lock() {
     var number = 0
     DispatchQueue.global().async {
         os_unfair_lock_lock(lock)
-        while number < 100 {
+        while number < 20 {
             number += 1
             print("os_unfair_lock in \(number)")
         }
@@ -23,7 +23,7 @@ func test_os_unfair_lock() {
 
     DispatchQueue.global().async {
         os_unfair_lock_lock(lock)
-        while number < 100 {
+        while number < 20 {
             number += 1
             print("os_unfair_lock outside \(number)")
         }
@@ -31,5 +31,5 @@ func test_os_unfair_lock() {
     }
 
     sleep(1)
-    print("test_os_unfair_lock end")
+    print("test_os_unfair_lock end \n\n\n")
 }
