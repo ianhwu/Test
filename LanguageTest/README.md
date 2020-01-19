@@ -1,1 +1,1 @@
-[](../language.jpg)
+![](../language.jpg)
