@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta http-equiv="Content-Style-Type" content="text/css">
+                <title>Local Website</title>
+                <style>
+                    h1 {
+                        font-size: 60px;
+                    }
+                
+                h2 {
+                    font-size: 40px;
+                }
+                
+                p {
+                    font-size: 30px;
+                }
+                </style>
+                </head>
+    <body>
+        <h1>SwiftUI JavaScript Interaction</h1>
+        
+        <p>This example shows how to interact between iOS native app and a web app through JavaScript Functions.</p>
+        
+        <p id="output"></p>
+        
+        <script type = "text/javascript">
+            
+            // This function sends a simple json value to iOS app
+            function sendJsonValueToIOS() {
+                // Here iOSNative is the name we passed from iOS app
+                window.webkit.messageHandlers.iOSNative.postMessage({Name : "John Doe"});
+            }
+        
+        // This function sends a string value to iOS app
+        function sendStringValueToIOS() {
+            sendJsonValueToIOS();
+            // Here iOSNative is the name we passed from iOS app
+            window.webkit.messageHandlers.iOSNative.postMessage("Bla Bla Bla");
+        }
+        
+        // you can call this function from your iOS app and pass value to this web app
+        function valueGotFromIOS(value) {
+            sendStringValueToIOS();
+            sendJsonValueToIOS();
+            var obj = JSON.parse(value);
+            document.getElementById("output").innerHTML = obj["title"];
+        }
+        </script>
+    </body>
+</html>
