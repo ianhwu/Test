@@ -1,0 +1,150 @@
+//
+//  module.m
+//  Module
+//
+//  Created by Yan Hu on 2019/8/5.
+//  Copyright © 2019 yan. All rights reserved.
+//
+
+/*
+module OtherFile [extern_c] {
+    header "headers.h"
+    export *
+    umbrella "Subs"
+    module * { export * }
+}
+*/
+
+/*
+module OtherFile {
+    // c file
+    module CFile {
+        header "file.h"
+        header "filea.h"
+        header "filebbb.h"
+        link "CFile"
+        export *
+    }
+    
+    // oc file
+    module Test {
+        requires objc
+        header "Test3.h"
+        header "Test2.h"
+        header "Test.h"
+        link "Test"
+        export *
+    }
+}
+ */
+ 
+//*
+framework module ModuleFramework {
+    explicit module OtherFile {
+        // c file
+        module CFile {
+            header "file.h"
+            header "filea.h"
+            header "filebbb.h"
+            
+            link "CFile"
+            export *
+        }
+        
+        module Subs {
+            header "Sub.h"
+            header "TestSubSub.h"
+            header "SubSubs.h"
+            header "Sub.h"
+            link "Subs"
+            export *
+        }
+        
+        // oc file
+        module Test {
+            requires objc
+            header "Test3.h"
+            header "Test2.h"
+            header "Test.h"
+            
+            link "Test"
+            export *
+        }
+    }
+}
+/*/
+
+/*
+module OtherFile {
+    // c file
+    module CFile {
+        header "file.h"
+        header "filea.h"
+        header "filebbb.h"
+        export *
+    }
+    
+    // subs 文件夹
+    umbrella "Subs"
+    module * { export * }
+    
+    // oc file
+    module Test {
+        requires objc
+        header "Test3.h"
+        header "Test2.h"
+        header "Test.h"
+        export *
+        
+        umbrella "Subs/OCSubs"
+        module * { export * }
+    }
+}
+*/
+
+/*
+module OtherFile {
+    umbrella header "headers.h"
+    module * { export * }
+}
+*/
+
+/*
+module OtherFile {
+    umbrella "Subs"
+    module * { export * }
+}
+*/
+
+/*
+module CFile {
+    header "file.h"
+    header "file_c.h"
+    export *
+}
+
+module OCFile {
+    header "Test.h"
+    header "Test2.h"
+    export *
+}
+
+module OtherFile {
+    module OCFile {
+        header "Test.h"
+        header "Test2.h"
+        export *
+    }
+
+    module CFile {
+        header "file.h"
+        header "file_c.h"
+        export *
+    }
+}
+*/
+
+module ModuleFramework.Swift {
+    header "ModuleFramework-Swift.h"
+    requires objc
+}
