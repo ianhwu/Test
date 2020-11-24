@@ -21,10 +21,10 @@
 		2C4D32B924BA0B8300086EEA /* Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D32A324BA0B8300086EEA /* Test2.m */; };
 		2C4D32E424BA1D3700086EEA /* PublicFile1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D32E324BA1D3700086EEA /* PublicFile1.swift */; };
 		2C4D32E824BA1F7400086EEA /* AAA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D32E724BA1F7400086EEA /* AAA.swift */; };
-		2C4D330724BB077200086EEA /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329824BA0B8300086EEA /* file.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C4D330724BB077200086EEA /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329824BA0B8300086EEA /* file.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C4D330924BB07A600086EEA /* file_plus.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D328B24BA0B8200086EEA /* file_plus.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
-		2C4D330A24BB07A600086EEA /* Subsubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329124BA0B8300086EEA /* Subsubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C4D330B24BB07A600086EEA /* Sub.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329224BA0B8300086EEA /* Sub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C4D330A24BB07A600086EEA /* Subsubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329124BA0B8300086EEA /* Subsubs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C4D330B24BB07A600086EEA /* Sub.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329224BA0B8300086EEA /* Sub.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2C4D330C24BB07A600086EEA /* Sub1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329424BA0B8300086EEA /* Sub1.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2C4D330D24BB07A700086EEA /* TestSubSub.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329624BA0B8300086EEA /* TestSubSub.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2C4D330E24BB07A700086EEA /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329924BA0B8300086EEA /* Test.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -32,7 +32,7 @@
 		2C4D331024BB07A700086EEA /* headers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329C24BA0B8300086EEA /* headers.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2C4D331124BB07A700086EEA /* Test3.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329D24BA0B8300086EEA /* Test3.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2C4D331224BB07A700086EEA /* filebbb.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D329E24BA0B8300086EEA /* filebbb.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		2C4D331324BB07A700086EEA /* filea.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D32A224BA0B8300086EEA /* filea.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C4D331324BB07A700086EEA /* filea.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4D32A224BA0B8300086EEA /* filea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,18 +169,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4D324A24BA06F200086EEA /* ModuleFramework.h in Headers */,
-				2C4D330A24BB07A600086EEA /* Subsubs.h in Headers */,
-				2C4D330B24BB07A600086EEA /* Sub.h in Headers */,
 				2C4D330724BB077200086EEA /* file.h in Headers */,
+				2C4D331324BB07A700086EEA /* filea.h in Headers */,
+				2C4D331224BB07A700086EEA /* filebbb.h in Headers */,
 				2C4D330924BB07A600086EEA /* file_plus.hpp in Headers */,
 				2C4D330C24BB07A600086EEA /* Sub1.h in Headers */,
 				2C4D330D24BB07A700086EEA /* TestSubSub.h in Headers */,
 				2C4D330E24BB07A700086EEA /* Test.h in Headers */,
+				2C4D330A24BB07A600086EEA /* Subsubs.h in Headers */,
+				2C4D330B24BB07A600086EEA /* Sub.h in Headers */,
 				2C4D330F24BB07A700086EEA /* Test2.h in Headers */,
 				2C4D331024BB07A700086EEA /* headers.h in Headers */,
 				2C4D331124BB07A700086EEA /* Test3.h in Headers */,
-				2C4D331224BB07A700086EEA /* filebbb.h in Headers */,
-				2C4D331324BB07A700086EEA /* filea.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

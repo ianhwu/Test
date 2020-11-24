@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'TestOpenCV' do
+  # Pods for TestOpenCV
+  pod 'OpenCV'
+
+end

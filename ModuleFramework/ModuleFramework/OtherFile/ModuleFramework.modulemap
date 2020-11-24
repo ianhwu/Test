@@ -42,7 +42,7 @@ module OtherFile {
 framework module ModuleFramework {
     explicit module OtherFile {
         // c file
-        module CFile {
+        module CFile  {
             header "file.h"
             header "filea.h"
             header "filebbb.h"

@@ -19,7 +19,5 @@ class ViewController: UIViewController {
         
         let b = SwiftTest1()
         b.cRun()
-        
-        subRun()
     }
 }
