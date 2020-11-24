@@ -1,0 +1,37 @@
+silopt_register_sources(
+  ARCCodeMotion.cpp
+  AccessEnforcementDom.cpp
+  AccessEnforcementOpts.cpp
+  AccessEnforcementReleaseSinking.cpp 
+  AccessEnforcementWMO.cpp
+  AllocBoxToStack.cpp
+  ArrayCountPropagation.cpp
+  ArrayElementValuePropagation.cpp
+  AssumeSingleThreaded.cpp
+  CSE.cpp
+  ConditionForwarding.cpp
+  CopyForwarding.cpp
+  CopyPropagation.cpp
+  DeadCodeElimination.cpp
+  DeadObjectElimination.cpp
+  DeadStoreElimination.cpp
+  DestroyHoisting.cpp
+  Devirtualizer.cpp
+  GenericSpecializer.cpp
+  MergeCondFail.cpp
+  Outliner.cpp
+  ObjectOutliner.cpp
+  PerformanceInliner.cpp
+  RedundantLoadElimination.cpp
+  RedundantOverflowCheckRemoval.cpp
+  ReleaseDevirtualizer.cpp
+  SILCodeMotion.cpp
+  SILLowerAggregateInstrs.cpp
+  SILMem2Reg.cpp
+  SILSROA.cpp
+  SimplifyCFG.cpp
+  Sink.cpp
+  SpeculativeDevirtualizer.cpp
+  StackPromotion.cpp
+  UnsafeGuaranteedPeephole.cpp
+)
